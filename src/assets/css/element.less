@@ -1,0 +1,22 @@
+/*去掉打开抽屉时自动选中标题时的蓝色边框*/
+.el-drawer__container {
+  .el-drawer:focus,
+  .el-drawer__close-btn:focus,
+  .el-drawer__header span:focus {
+    outline: 0;
+  }
+  .el-drawer__header {
+    border-bottom: 1px dashed @color-bd;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    span {
+      font-size: @font-18;
+      font-weight: @font-bold;
+    }
+  }
+}
+.el-scrollbar {
+  .el-scrollbar__wrap {
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,17 @@
+@import "./vars.less";
+@import "./element.less";
+
+body {
+  font-family: @font-family;
+  // user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: @color-bg-body;
+  color: @color-text-black;
+  font-size: @font-14;
+  overflow: hidden;
+  /* rem vw/vh */
+  // width: 100vw;
+}
+textarea {
+  resize: none !important;
+}
